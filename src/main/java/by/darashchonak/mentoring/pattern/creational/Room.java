@@ -3,7 +3,7 @@ package by.darashchonak.mentoring.pattern.creational;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Room {
+public abstract class Room {
 
     private Map<Direction, Wall> sides = new HashMap<Direction, Wall>();
     private int roomNo;

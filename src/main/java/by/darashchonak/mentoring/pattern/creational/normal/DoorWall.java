@@ -1,4 +1,7 @@
-package by.darashchonak.mentoring.pattern.creational;
+package by.darashchonak.mentoring.pattern.creational.normal;
+
+import by.darashchonak.mentoring.pattern.creational.Room;
+import by.darashchonak.mentoring.pattern.creational.Wall;
 
 public class DoorWall extends Wall {
 

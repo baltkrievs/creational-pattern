@@ -3,15 +3,11 @@ package by.darashchonak.mentoring.pattern.creational;
 import by.darashchonak.mentoring.pattern.creational.factory.MazeFactory;
 import by.darashchonak.mentoring.pattern.creational.normal.DoorWall;
 
-public class MazeGame {
-
-    private MazeFactory factory;
-
-    public MazeGame(MazeFactory factory) {
-        this.factory = factory;
-    }
+public abstract class MazeGame {
 
     public Maze createMaze() {
+
+        MazeFactory factory = getFactory();
 
         Maze aMaze = new Maze();
         Room r1 = factory.createRoom(1);
@@ -29,4 +25,6 @@ public class MazeGame {
         r2.setSide(Direction.WEST, d);
         return aMaze;
     }
+
+    public abstract MazeFactory getFactory();
 }

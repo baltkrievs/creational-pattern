@@ -1,14 +1,14 @@
 package by.darashchonak.mentoring.pattern.creational;
 
-import by.darashchonak.mentoring.pattern.creational.factory.MagicMazeFactory;
-import by.darashchonak.mentoring.pattern.creational.factory.NormalMazeFactory;
+import by.darashchonak.mentoring.pattern.creational.factory.MagicMazeGame;
+import by.darashchonak.mentoring.pattern.creational.factory.NormalMazeGame;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        new MazeGame(new NormalMazeFactory()).createMaze();
-        new MazeGame(new MagicMazeFactory()).createMaze();
+        new NormalMazeGame().createMaze();
+        new MagicMazeGame().createMaze();
     }
 
 }
